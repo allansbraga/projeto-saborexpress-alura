@@ -25,7 +25,7 @@ def opcao_invalida():
 
 def exibir_subtitulo(texto):
     os.system('clear')
-    linha = '*' * len(texto)
+    linha = '-' * len(texto)
     print(linha)
     print(texto)
     print(linha)
@@ -48,7 +48,7 @@ def exibir_opcoes():
 
 def listar_restaurantes():
     exibir_subtitulo('Listando os restaurantes cadastrados:')
-    print(f'{'Nome do restaurante'.ljust(22)} | {'Categoria'.ljust(20)} | {'Status'}')
+    print(f'{'Nome do restaurante'.ljust(22)} | {'Categoria'.ljust(20)} | Status')
     for restaurante in restaurantes:
         nome_restaurante = restaurante['nome']
         categoria = restaurante['categoria']
